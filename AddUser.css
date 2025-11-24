@@ -1,0 +1,134 @@
+.add-user-container {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid #475569;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.form-header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #e2e8f0;
+}
+
+.form-subtitle {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  margin: 0.5rem 0 0;
+}
+
+.success-message {
+  background: #10b981;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.form-input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background: #0f172a;
+  border: 2px solid #475569;
+  border-radius: 8px;
+  color: #e2e8f0;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  resize: vertical;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+}
+
+.form-input::placeholder {
+  color: #64748b;
+}
+
+.form-input.input-error {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.error-text {
+  font-size: 0.85rem;
+  color: #fca5a5;
+  margin-top: -0.25rem;
+}
+
+.submit-btn {
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+  color: #0f172a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 12px rgba(96, 165, 250, 0.3);
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(96, 165, 250, 0.4);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .add-user-container {
+    padding: 1.5rem;
+  }
+
+  .form-title {
+    font-size: 1.25rem;
+  }
+}
